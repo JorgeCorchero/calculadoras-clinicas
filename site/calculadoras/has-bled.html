@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>HAS-BLED | Calculadoras Clínicas</title>
+  <link rel="stylesheet" href="../styles.css">
+  <script defer src="../script.js"></script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="/"><img src="../assets/logo.svg" alt="Logo"> Calculadoras Clínicas</a>
+  </div>
+</header>
+<main class="container">
+  <h1>HAS-BLED</h1>
+  <p><small class="muted">Estimación del riesgo de sangrado en FA con anticoagulación.</small></p>
+  <div>
+    <label><input type="checkbox" data-has value="1" onchange="calcHASBLED()"> HTA (≥160 mmHg)</label><br>
+    <label><input type="checkbox" data-has value="1" onchange="calcHASBLED()"> Función renal o hepática anormal (1 punto cada)</label><br>
+    <label><input type="checkbox" data-has value="1" onchange="calcHASBLED()"> Ictus</label><br>
+    <label><input type="checkbox" data-has value="1" onchange="calcHASBLED()"> Sangrado previo</label><br>
+    <label><input type="checkbox" data-has value="1" onchange="calcHASBLED()"> INR lábil</label><br>
+    <label><input type="checkbox" data-has value="1" onchange="calcHASBLED()"> Edad >65</label><br>
+    <label><input type="checkbox" data-has value="1" onchange="calcHASBLED()"> Fármacos/alcohol (1 punto cada)</label><br>
+  </div>
+  <div class="output"><strong>Puntuación:</strong> <span id="resultado-has">0 puntos</span></div>
+  <p><small class="muted">Referencia: Pisters R, Lane DA, Nieuwlaat R, de Vos CB, Crijns HJGM, Lip GYH. A novel user-friendly score (HAS-BLED) to assess 1-year risk of major bleeding in patients with AF. <em>Chest</em>. 2010;138(5):1093–1100.</small></p>
+</main>
+<footer class="footer"><div class="container"><p>© <span id="year"></span> Calculadoras Clínicas</p></div></footer>
+</body>
+</html>
