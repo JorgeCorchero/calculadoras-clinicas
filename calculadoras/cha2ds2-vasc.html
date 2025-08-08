@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="2d3XTB-dlZXSN_DQ5lcik_0HlseHVf8iVqp5mPSEnTA" />
+<title>CHA2DS2-VASc | Calculadoras Clínicas</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" href="../assets/favicon.png" sizes="64x64" type="image/png">
+  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="canonical" href="https://jorgecorchero.github.io/calculadoras-clinicas/calculadoras/cha2ds2-vasc.html">
+  <script defer src="../script.js"></script>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="../"><img src="../assets/logo.svg" alt="Logo"> Calculadoras Clínicas</a>
+  </div>
+</header>
+<main class="container">
+  <h1>CHA<sub>2</sub>DS<sub>2</sub>-VASc</h1>
+  <p><small class="muted">Riesgo tromboembólico en fibrilación auricular no valvular.</small></p>
+  <div>
+    <label><input type="checkbox" data-cha value="1" onchange="calcCHA2DS2VASC()"> Insuficiencia cardiaca</label><br>
+    <label><input type="checkbox" data-cha value="1" onchange="calcCHA2DS2VASC()"> Hipertensión</label><br>
+    <label><input type="checkbox" data-cha value="2" onchange="calcCHA2DS2VASC()"> Edad ≥75</label><br>
+    <label><input type="checkbox" data-cha value="1" onchange="calcCHA2DS2VASC()"> Diabetes</label><br>
+    <label><input type="checkbox" data-cha value="2" onchange="calcCHA2DS2VASC()"> Ictus/AIT/TE previo</label><br>
+    <label><input type="checkbox" data-cha value="1" onchange="calcCHA2DS2VASC()"> Vascular (IAM, arteriopatía)</label><br>
+    <label><input type="checkbox" data-cha value="1" onchange="calcCHA2DS2VASC()"> Edad 65–74</label><br>
+    <label><input type="checkbox" data-cha value="1" onchange="calcCHA2DS2VASC()"> Sexo femenino</label>
+  </div>
+  <div class="output"><strong>Puntuación:</strong> <span id="resultado-cha">0 puntos</span></div>
+  <p><small class="muted">Referencia: Lip GYH, Nieuwlaat R, Pisters R, Lane DA, Crijns HJGM. Refining clinical risk stratification for predicting stroke and thromboembolism: the CHA<sub>2</sub>DS<sub>2</sub>-VASc score. <em>Chest</em>. 2010;137:263–272.</small></p>
+</main>
+<footer class="footer"><div class="container"><p>© <span id="year"></span> Calculadoras Clínicas</p></div></footer>
+<script defer src="../cookie-consent.js"></script>
+<script>
+if ("serviceWorker" in navigator) { navigator.serviceWorker.register("../service-worker.js"); }
+</script>
+</body>
+</html>
