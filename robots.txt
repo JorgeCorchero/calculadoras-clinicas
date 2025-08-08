@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://jorgecorchero.github.io/calculadoras-clinicas/sitemap.xml
